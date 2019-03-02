@@ -87,6 +87,8 @@
             var imagePoints = [12, 4, 7, 3, 1, 5, 2, 8, 9, 10];
             var currentScore = 0;
             var totalScore = 0;
+
+
             $( document ).ready( function () {
                 var randomNumber = ( Math.floor( Math.random() * 286 ) + 1 );
                 console.log( randomNumber );
@@ -95,7 +97,16 @@
                 } );
 
             } );
+            var imagePointsOne = ( Math.floor( Math.random() * 20 ) + 1 );
+            console.log( imagePointsOne );
 
+            var imagePointsTwo = ( Math.floor( Math.random() * 20 ) + 1 );
+            console.log( imagePointsTwo );
+            var imagePointsThree = ( Math.floor( Math.random() * 20 ) + 1 );
+            console.log( imagePointsThree );
+
+            var imagePointsFour = ( Math.floor( Math.random() * 12 ) + 1 );
+            console.log( imagePointsFour );
 
 
 
@@ -106,24 +117,24 @@
 
 
             $( "#mo-salah1" ).on( "click", function () {
-                imagePoints[3];
-                currentScore += 3;
+                imagePointsOne;
+                currentScore += imagePointsOne;
                 alert( "You scored " + currentScore + " points!" );
 
             } );
             $( "#mo-salah2" ).on( "click", function () {
-                imagePoints[2];
-                currentScore += 7;
+                imagePointsTwo;
+                currentScore += imagePointsTwo;
                 alert( "You scored " + currentScore + " points!" );
             } );
             $( "#mo-salah3" ).on( "click", function () {
-                imagePoints[0];
-                currentScore += 12;
+                imagePointsThree;
+                currentScore += imagePointsThree;
                 alert( "You scored " + currentScore + " points!" );
             } );
             $( "#mo-salah4" ).on( "click", function () {
-                imagePoints[1];
-                currentScore += 4;
+                imagePointsFour;
+                currentScore += imagePointsFour;
                 alert( "You scored " + currentScore + " points!" );
             } );
 
