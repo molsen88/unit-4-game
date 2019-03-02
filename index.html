@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Crystal Game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" href="assets/css/style.css">
+
+
+    </head>
+
+    <body>
+
+
+
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Image Collector!</h1>
+
+            </div>
+        </div>
+        <div>
+            <div class="row-1">
+                <div id="game-info">
+                    <h2>How to play the game</h2>
+                    <br>
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four images below. By clicking on an image you will add a specific amount
+                        of points to your total.
+                    </p>
+                    <p>You win the game by matching your total score to random number, you lose the
+                        game if your total score goes above the random number.
+                    </p>
+                    <p>The value of each image is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the value of each image.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3" id="random-number">
+                <h1>Random Number:</h1>
+            </div>
+            <div class="col-md-3" id="total-score">
+                <h1>Total Score:</h1>
+            </div>
+            <div class="col-md-3" id="current-score">
+                <h1>Current Score:</h1>
+            </div>
+            <div class="col-md-3" id="wins">
+                <h1 id="wins-text">Wins: 0</h1>
+                <h1 id="lossest-text">Losses: 0</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="images-row">
+            <div class="col-md-3" id="mo-salah1">
+                <img src="assets/images/mo salah.jpeg">
+            </div>
+            <div class="col-md-3" id="mo-salah2">
+                <img src="assets/images/Mo and Bobby.jpeg">
+            </div>
+            <div class="col-md-3" id="mo-salah3">
+                <img src="assets/images/Mo salah 3.jpeg">
+            </div>
+            <div class="col-md-3" id="mo-salah4">
+                <img src="assets/images/mo salah 2.jpeg">
+            </div>
+        </div>
+        <footer>
+            <button type="button" class="btn btn-outline-warning"><a
+                    href="file:///Users/michaelolsen/dev/uubc/unit-4-game/index.html">Play again!</button>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js">
+        </script>
+        <script type="text/javascript">
+
+            //Create variables
+            var wins = 0;
+            var losses = 0;
+            var imagePoints = [12, 4, 7, 3, 1, 5, 2, 8, 9, 10];
+            var currentScore = 0;
+            var totalScore = 0;
+            $( document ).ready( function () {
+                var randomNumber = ( Math.floor( Math.random() * 286 ) + 1 );
+                console.log( randomNumber );
+                $( "random-number" ).show( randomNumber, function () {
+                    randomNumber;
+                } );
+
+            } );
+
+
+
+
+
+
+
+
+
+
+            $( "#mo-salah1" ).on( "click", function () {
+                imagePoints[3];
+                currentScore += 3;
+                alert( "You scored " + currentScore + " points!" );
+
+            } );
+            $( "#mo-salah2" ).on( "click", function () {
+                imagePoints[2];
+                currentScore += 7;
+                alert( "You scored " + currentScore + " points!" );
+            } );
+            $( "#mo-salah3" ).on( "click", function () {
+                imagePoints[0];
+                currentScore += 12;
+                alert( "You scored " + currentScore + " points!" );
+            } );
+            $( "#mo-salah4" ).on( "click", function () {
+                imagePoints[1];
+                currentScore += 4;
+                alert( "You scored " + currentScore + " points!" );
+            } );
+
+
+
+
+
+            function reset() {
+                currentScore = 0;
+                totalScore = 0;
+                randomNumber;
+            }
+
+        </script>
+    </body>
+
+</html>
