@@ -10,7 +10,8 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" href="assets/css/style.css">
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js">
+        </script>
 
     </head>
 
@@ -44,16 +45,14 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-3" id="random-number">
+            <div class="col-md-4" id="random-number">
                 <h1>Random Number:</h1>
             </div>
-            <div class="col-md-3" id="total-score">
-                <h1>Total Score:</h1>
-            </div>
-            <div class="col-md-3" id="current-score">
+
+            <div class="col-md-4" id="current-score">
                 <h1>Current Score:</h1>
             </div>
-            <div class="col-md-3" id="wins">
+            <div class="col-md-4" id="wins">
                 <h1 id="wins-text">Wins: 0</h1>
                 <h1 id="lossest-text">Losses: 0</h1>
             </div>
@@ -77,78 +76,9 @@
             <button type="button" class="btn btn-outline-warning"><a
                     href="file:///Users/michaelolsen/dev/uubc/unit-4-game/index.html">Play again!</button>
         </footer>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js">
-        </script>
-        <script type="text/javascript">
-
-            //Create variables
-            var wins = 0;
-            var losses = 0;
-            var imagePoints = [12, 4, 7, 3, 1, 5, 2, 8, 9, 10];
-            var currentScore = 0;
-            var totalScore = 0;
-
-
-            $( document ).ready( function () {
-                var randomNumber = ( Math.floor( Math.random() * 286 ) + 1 );
-                console.log( randomNumber );
-                $( "random-number" ).show( randomNumber, function () {
-                    randomNumber;
-                } );
-
-            } );
-            var imagePointsOne = ( Math.floor( Math.random() * 20 ) + 1 );
-            console.log( imagePointsOne );
-
-            var imagePointsTwo = ( Math.floor( Math.random() * 20 ) + 1 );
-            console.log( imagePointsTwo );
-            var imagePointsThree = ( Math.floor( Math.random() * 20 ) + 1 );
-            console.log( imagePointsThree );
-
-            var imagePointsFour = ( Math.floor( Math.random() * 12 ) + 1 );
-            console.log( imagePointsFour );
-
-
-
-
-
-
-
-
-
-            $( "#mo-salah1" ).on( "click", function () {
-                imagePointsOne;
-                currentScore += imagePointsOne;
-                alert( "You scored " + currentScore + " points!" );
-
-            } );
-            $( "#mo-salah2" ).on( "click", function () {
-                imagePointsTwo;
-                currentScore += imagePointsTwo;
-                alert( "You scored " + currentScore + " points!" );
-            } );
-            $( "#mo-salah3" ).on( "click", function () {
-                imagePointsThree;
-                currentScore += imagePointsThree;
-                alert( "You scored " + currentScore + " points!" );
-            } );
-            $( "#mo-salah4" ).on( "click", function () {
-                imagePointsFour;
-                currentScore += imagePointsFour;
-                alert( "You scored " + currentScore + " points!" );
-            } );
-
-
-
-
-
-            function reset() {
-                currentScore = 0;
-                totalScore = 0;
-                randomNumber;
-            }
-
+        <script src="./assets/javascript/game.js">
         </script>
     </body>
+
 
 </html>
