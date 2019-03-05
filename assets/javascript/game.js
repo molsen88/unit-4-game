@@ -1,7 +1,7 @@
 //Create variables
 var wins = 0;
 var losses = 0;
-var imagePoints = [12, 4, 7, 3, 1, 5, 2, 8, 9, 10];
+
 var currentScore = 0;
 
 
@@ -98,10 +98,6 @@ $( document ).ready( function () {
         $( "#wins-text" ).html( "<h1>Wins: " + wins + "</h1>" );
         $( "#losses-text" ).html( "<h1>Losses: " + losses + "</h1>" );
         $( "#random-number" ).html( "<h1>Random Number: " + randomNumber + "</h1>" );
-
-
-
-
 
     };
 

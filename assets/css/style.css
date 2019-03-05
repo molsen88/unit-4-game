@@ -30,12 +30,13 @@ img{
     border-radius: 35px;
     border: 6px solid yellow;
     box-shadow: 10px 10px 5px grey;
+    transition: transform .3s;
     
 }
 img:hover{
+
     cursor: pointer;
-    width: 275px;
-    height: 275px;
+    transform: scale(1.5);
     
    
 }
