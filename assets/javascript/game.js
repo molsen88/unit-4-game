@@ -84,13 +84,13 @@ $( document ).ready( function () {
     function updateHTML() {
         if ( randomNumber === currentScore ) {
 
-            alert( "Golazo! You've won the game!" )
+            // alert( "Golazo! You've won the game!" )
             wins++;
             reset();
 
             console.log( wins );
         } else if ( currentScore > randomNumber ) {
-            alert( "You Lost!" )
+            // alert( "You Lost!" )
             losses++;
             reset();
         }

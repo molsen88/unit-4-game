@@ -1,5 +1,10 @@
+body{
+    /* background-color: rgb(230, 219, 219); */
+    background-image: url("../images/Mohamed-Salah-celebrates-goal.jpg");
+    background-size: cover; 
+}
 .jumbotron{
-    background-image: url("../images/mo\ salah.jpeg");
+    background-image: url("../images/Mohamed-Salah-celebrates-goal.jpg");
     background-size: cover;
     border-bottom: rgb(36, 34, 34) 10px solid;
     margin-bottom: auto;
@@ -29,19 +34,20 @@ img{
     height: 250px;
     border-radius: 35px;
     border: 6px solid yellow;
-    box-shadow: 10px 10px 5px grey;
+    /* box-shadow: 10px 10px 5px grey; */
     transition: transform .3s;
     
 }
 img:hover{
 
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.4);
     
    
 }
 .row-1{
     margin: 10px 60px 10px 60px;
+    
 }
 .row{
         display: flex;
@@ -58,6 +64,9 @@ img:hover{
     background-color: rgb(202, 71, 71);
     border-style: ridge;
     font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+  filter: alpha(opacity=60);
+  font-weight: bold;
     
     }
 
@@ -124,3 +133,12 @@ a{
     
     text-decoration: none;
 }
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+
+    .jumbotron{
+
+    }
+    
+    
+}  */
